@@ -18,9 +18,7 @@ const JoinUs = () => {
         </div>
         <DotsBanner />
       </div>
-      <div className="w-screen h-[150px] lg:h-[350px] relative lg:max-w-7xl aspect-video">
-        <Image src={`/assets/footer-pixels.png`} alt="Footer Blocks" fill />
-      </div>
+      <div className="w-screen h-[150px] lg:h-[350px] relative lg:max-w-7xl bg-repeat bg-cover bg-image-pixels bg-center "></div>
     </>
   );
 };

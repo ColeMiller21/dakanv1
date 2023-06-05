@@ -19,3 +19,15 @@
 body {
   font-family: "DinoPro", sans-serif;
 }
+
+.bg-image {
+  background-image: url("/assets/dots_t.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-image-pixels {
+  background-image: url("/assets/footer-pixels.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
