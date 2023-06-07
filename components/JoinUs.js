@@ -9,11 +9,8 @@ const JoinUs = () => {
         <DotsBanner />
         <div className="w-full md:w-[60%] my-[7rem]">
           <p className="text-[2rem] lg:text-[3rem] font-bold text-center">
-            We believe the future
-            <br /> is digital.{" "}
-            <span className="text-primary-green underline cursor-pointer">
-              Join us!
-            </span>
+            Where physical and digital{" "}
+            <span className="text-primary-green">collect</span> together.
           </p>
         </div>
         <DotsBanner />

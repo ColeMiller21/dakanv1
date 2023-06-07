@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import ClipLoader from "react-spinners/ClipLoader";
 import Link from "next/link";
+import LinkList from "./LinkList";
 
 const NOTIFICATION_STATES = {
   idle: "Register",
@@ -43,8 +44,8 @@ const Footer = () => {
   };
 
   return (
-    <div className="w-screen min-h-[300px] flex flex-col items-center p-6 md:items-start md:flex-row md:justify-between bg-primary-black md:p-24 text-white">
-      <div className="flex flex-col md:flex-row gap-[3rem]">
+    <div className="w-screen min-h-[300px] flex flex-col items-center p-6  lg:flex-row md:justify-between bg-primary-black md:p-24 text-white overflow-hidden gap-[3rem] shadow-lg">
+      <div className="flex flex-col lg:flex-row gap-[3rem]">
         <div className="flex flex-col gap-[1rem]">
           <Image
             height={70}
@@ -55,25 +56,14 @@ const Footer = () => {
             alt="Dakan"
           />
           <span className="text-[.8rem]">
-            &copy; Dakan. All rights reserved
+            &copy; 2023 Dakan. All rights reserved
           </span>
         </div>
-        <div className="flex flex-col gap-[.5rem]">
-          <a href="#" target="_blank">
-            <strong>Connect</strong>
-          </a>
-          <a href="#" target="_blank">
-            Twitter
-          </a>
-          <a href="#" target="_blank">
-            LinkedIn
-          </a>
-          <a href="#" target="_blank">
-            Discord
-          </a>
+        <div className="flex gap-[1.5rem] items-center">
+          <LinkList />
         </div>
       </div>
-      <div className="flex gap-[.3rem]">
+      <div className="flex flex-col items-center lg:flex-row gap-[.3rem]">
         <input
           type="text"
           className="border-none rounded-full  h-[50px] w-[275px] px-[1rem] text-black"
@@ -84,7 +74,7 @@ const Footer = () => {
         <button
           onClick={emailSubmit}
           disabled={email === ""}
-          className="bg-primary-green text-black rounded-full h-[50px] px-[2rem] hover:text-white transition duration-400 cursor-pointer"
+          className="bg-primary-green text-black rounded-full h-[50px] px-[2rem] hover:text-primary-gray transition duration-400 cursor-pointer"
         >
           {isLoading ? (
             <ClipLoader

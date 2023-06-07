@@ -38,37 +38,13 @@ const Navbar = () => {
         />
       </div>
       <div className="hidden lg:flex items-center gap-[.3rem]">
-        <input
-          type="text"
-          className="border-none rounded-full  h-[50px] w-[275px] px-[1rem]"
-          placeholder="Email Address"
-        />
-        <button className="bg-primary-black text-white rounded-full h-[50px] px-[2rem] hover:text-primary-green transition duration-400">
-          Register
-        </button>
-        {/* <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--> */}
-        <div
-          style={{ position: "absolute", left: "-5000px" }}
-          aria-hidden="true"
+        <a
+          href="https://form.jotform.com/231286167055154"
+          target="_blank"
+          className="bg-primary-black text-white rounded-full flex justify-center items-center h-[50px] px-[2rem] hover:text-primary-green transition duration-400 drop-shadow-lg"
         >
-          <input
-            type="text"
-            name="b_eb05e4f830c2a04be30171b01_8281a64779"
-            tabIndex="-1"
-            defaultValue=""
-          />
-        </div>
-        <div className="clear">
-          <input
-            type="submit"
-            defaultValue=""
-            name="subscribe"
-            id="mc-embedded-subscribe"
-            className="button"
-            style={{ display: "none" }}
-          />
-        </div>
-        {/* END */}
+          Register
+        </a>
       </div>
     </motion.nav>
   );

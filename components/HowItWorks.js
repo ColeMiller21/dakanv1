@@ -42,7 +42,7 @@ const HowItWorks = () => {
           number={2}
           image="/assets/courier-unloading-cardboard-boxes.jpeg"
           imageAlt="alt"
-          text="Create a prepaid label from your ALT account for assets valued under $10k."
+          text="Create a prepaid label from your Dakan Vault account for assets valued under $10k."
           title="Ship your package"
         />
         <MobileWorksCard

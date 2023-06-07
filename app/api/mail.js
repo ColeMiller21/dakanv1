@@ -1,6 +1,3 @@
-// import { InView } from "react-intersection-observer";
-
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 const mailchimp = require("@mailchimp/mailchimp_marketing");
 const { API_KEY, SERVER, LIST_ID } = process.env;
 
