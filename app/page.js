@@ -7,6 +7,11 @@ import JoinUs from "@/components/JoinUs";
 
 export const metadata = {
   title: "Home | Dakan",
+  alternates: {
+    canonical: "https://dakan.io",
+  },
+  description:
+    "Welcome to Dakan, the premiere phygital marketplace leveraging blockchain technology for verified collectibles and memorabilia. Explore our offerings, join our vibrant community, and step into the future of trading collectibles.",
 };
 
 export default function Home() {

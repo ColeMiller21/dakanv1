@@ -5,18 +5,6 @@ import { DEFAULT_SEO } from "@/data/seoData";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import Head from "next/head";
 
-export const metadata = {
-  title: {
-    default: "Dakan",
-    template: `%s | Dakan`,
-  },
-  alternates: {
-    canonical: "https://dakan.io",
-  },
-  description:
-    "Dakan is the first phygital collectible marketplace using blockchain technology to transact verified collectibles and memorabilia. Browse the exchange. Join the community.",
-};
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
