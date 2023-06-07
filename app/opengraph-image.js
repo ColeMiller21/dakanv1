@@ -23,6 +23,7 @@ export default async function Image() {
             src="../public/assets/opengraph-image.jpeg"
             alt="Phygital"
             tw="flex flex-1"
+            style={{ size }}
           />
         </div>
       </div>
