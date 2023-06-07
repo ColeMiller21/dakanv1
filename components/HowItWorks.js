@@ -85,12 +85,14 @@ const WorksCard = ({ image, title, text, number, imageAlt }) => {
           {number}
         </div>
       </div>
-      <div className="w-[60%] py-[2.5rem] flex flex-col gap-[2rem]">
-        <span className="text-[2rem] font-bold">{title}</span>
-        <span className="text-[1.5rem]">{text}</span>
+      <div className="w-[60%] py-[2rem] flex flex-col gap-[1rem]">
+        <span className="lg:text-[1.75rem] xl:text-[2rem] font-bold">
+          {title}
+        </span>
+        <span className="lg:text-[1.25rem] xl:text-[1.5rem]">{text}</span>
       </div>
-      <div className="w-[35%] aspect-square relative">
-        <Image src={image} alt={imageAlt} fill />
+      <div className="w-[38%] aspect-[16/10] relative">
+        <Image src={image} alt={imageAlt} fill className="" />
       </div>
     </div>
   );
