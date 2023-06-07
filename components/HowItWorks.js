@@ -26,7 +26,7 @@ const HowItWorks = () => {
           number={3}
           image="/assets/locker-train-station.jpeg"
           imageAlt="alt"
-          text="Within 3 business days of receipt, your cards will be added to your portfolio."
+          text="Within 3 business days of receipt, your items will be added to your portfolio."
           title="Assets catalogued & vaulted"
         />
       </div>
