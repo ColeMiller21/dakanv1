@@ -56,7 +56,7 @@ const HowItWorks = () => {
       <div className="w-full flex flex-col items-center md:flex-row gap-[2.5rem] md:justify-around">
         <div className="relative w-full aspect-[16/8]">
           <Image
-            src={`/assets/lock-in-value.png`}
+            src={`/assets/secure-in-vault.png`}
             alt="Lock in value"
             fill
             className="shadow-md rounded-md"
@@ -64,8 +64,8 @@ const HowItWorks = () => {
         </div>
         <div className="relative w-full aspect-[16/8]">
           <Image
-            src={`/assets/real-time-insights.png`}
-            alt="Lock in value"
+            src={`/assets/real-time.png`}
+            alt="Real Time Value"
             fill
             className="shadow-md rounded-md"
           />

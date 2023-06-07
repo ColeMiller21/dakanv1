@@ -1,55 +1,15 @@
-"use client";
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
-import ClipLoader from "react-spinners/ClipLoader";
-import Link from "next/link";
 import LinkList from "./LinkList";
 
-const NOTIFICATION_STATES = {
-  idle: "Register",
-  success: "Success",
-  fail: "Error",
-};
-
 const Footer = () => {
-  const [email, setEmail] = useState("");
-  const [errorText, setErrorText] = useState(null);
-  const [isLoading, setIsLoading] = useState(false);
-  const [subscribeStatus, setSubscribeStatus] = useState("idle");
-
-  function isValidEmail(email) {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-  }
-
-  const emailSubmit = async (e) => {
-    e.preventDefault();
-    console.log(email);
-    if (email === "") return;
-    if (!isValidEmail(email)) {
-      alert("Not valid email");
-      return;
-    }
-    setIsLoading(true);
-    try {
-      let res = await axios.post("/api/mail", { email });
-      setSubscribeStatus("success");
-    } catch (err) {
-      setSubscribeStatus("fail");
-    }
-    setIsLoading(false);
-    setTimeout(() => {
-      setSubscribeStatus("idle");
-    }, 5000);
-  };
-
   return (
     <div className="w-screen min-h-[300px] flex flex-col items-center p-[3rem] lg:flex-row lg:justify-center bg-primary-black lg:p-24 text-white overflow-hidden gap-[3rem] shadow-lg">
       <div className="flex flex-col items-center gap-[3rem] lg:hidden">
         <MobileFooter />
       </div>
       <div className="w-full hidden lg:flex items-center justify-between max-w-7xl">
-        <div className="flex gap-[3rem]  ">
+        <div className="flex gap-[3rem]">
           <div className="flex flex-col gap-[1rem]">
             <Image
               height={70}
