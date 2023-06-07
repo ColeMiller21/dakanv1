@@ -23,7 +23,7 @@ const Navbar = () => {
       initial={{ y: -120 }}
       animate={{ y: isVisible ? 0 : -120 }}
       transition={{ duration: 0.5 }}
-      className={`fixed top-0 left-0 w-full z-50 h-[100px] bg-light-gray flex items-center justify-between px-[2rem] lg:px-24 ${
+      className={`fixed top-0 left-0 w-full z-50 h-[100px] bg-light-gray flex items-center justify-center px-[2rem] lg:px-24 ${
         isVisible && "shadow-sm"
       }`}
     >
