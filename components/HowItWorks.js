@@ -80,7 +80,7 @@ export default HowItWorks;
 const WorksCard = ({ image, title, text, number, imageAlt }) => {
   return (
     <div className="w-full bg-dark-gray rounded-lg flex flex-col lg:flex-row lg:gap-[2.5rem] overflow-hidden lg:h-[250px] shadow-md">
-      <div className="w-[10%] py-[2rem] pl-[3rem]">
+      <div className="w-[10%] py-[2rem] pl-[2rem]">
         <div className="w-[50px] aspect-square text-white bg-primary-green flex justify-center items-center text-[30px] font-bold">
           {number}
         </div>
@@ -91,8 +91,8 @@ const WorksCard = ({ image, title, text, number, imageAlt }) => {
         </span>
         <span className="lg:text-[1.25rem] xl:text-[1.5rem]">{text}</span>
       </div>
-      <div className="w-[38%] aspect-[16/10] relative">
-        <Image src={image} alt={imageAlt} fill className="" />
+      <div className="lg:w-[45%] xl:w-[40%] overflow-hidden  relative">
+        <Image src={image} alt={imageAlt} fill className="object-cover" />
       </div>
     </div>
   );

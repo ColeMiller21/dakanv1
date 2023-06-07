@@ -10,6 +10,9 @@ export const metadata = {
   alternates: {
     canonical: "https://dakan.io",
   },
+  other: {
+    "facebook-domain-verification": "392w91gx3hs5oih7ct84r308nyjng4",
+  },
   description:
     "Welcome to Dakan, the premiere phygital marketplace leveraging blockchain technology for verified collectibles and memorabilia. Explore our offerings, join our vibrant community, and step into the future of trading collectibles.",
 };
