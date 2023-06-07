@@ -17,9 +17,11 @@ const MissionStatement = () => {
     >
       <div className="w-full md:w-[60%] text-[2rem] text-center lg:text-left lg:text-[3rem]">
         <p className="leading-tight">
-          <span className="font-bold">Trade, display,</span> and{" "}
-          <span className="font-bold">explore</span> a unique world of{" "}
-          <span className="text-primary-green font-bold">collectibles,</span>{" "}
+          <span className="font-extrabold">Trade, display,</span> and{" "}
+          <span className="font-extrabold">explore</span> a unique world of{" "}
+          <span className="text-primary-green font-extrabold">
+            collectibles,
+          </span>{" "}
           boasting the security and convience of cutting edge technology.
         </p>
       </div>

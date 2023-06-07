@@ -19,7 +19,7 @@ const HowItWorks = () => {
           number={2}
           image="/assets/courier-unloading-cardboard-boxes.jpeg"
           imageAlt="alt"
-          text="Create a prepaid label from your ALT account for assets valued under $10k."
+          text="Create a prepaid label from your Dakan Vault account for assets valued under $10k."
           title="Ship your package"
         />
         <WorksCard
@@ -49,25 +49,25 @@ const HowItWorks = () => {
           number={3}
           image="/assets/locker-train-station.jpeg"
           imageAlt="alt"
-          text="Within 3 business days of receipt, your cards will be added to your portfolio."
+          text="Within 3 business days of receipt, your items will be added to your portfolio."
           title="Assets catalogued & vaulted"
         />
       </div>
       <div className="w-full flex flex-col items-center md:flex-row gap-[2.5rem] md:justify-around">
-        <div className="relative w-full  aspect-video">
+        <div className="relative w-full aspect-[16/8]">
           <Image
             src={`/assets/lock-in-value.png`}
             alt="Lock in value"
             fill
-            className="shadow-md"
+            className="shadow-md rounded-md"
           />
         </div>
-        <div className="relative w-full  aspect-video">
+        <div className="relative w-full aspect-[16/8]">
           <Image
             src={`/assets/real-time-insights.png`}
             alt="Lock in value"
             fill
-            className="shadow-md"
+            className="shadow-md rounded-md"
           />
         </div>
       </div>
@@ -79,7 +79,7 @@ export default HowItWorks;
 
 const WorksCard = ({ image, title, text, number, imageAlt }) => {
   return (
-    <div className="w-full bg-dark-gray rounded-lg flex flex-col lg:flex-row lg:gap-[2.5rem] overflow-hidden shadow-sm lg:h-[250px] shadow-md">
+    <div className="w-full bg-dark-gray rounded-lg flex flex-col lg:flex-row lg:gap-[2.5rem] overflow-hidden lg:h-[250px] shadow-md">
       <div className="w-[10%] py-[2rem] pl-[3rem]">
         <div className="w-[50px] aspect-square text-white bg-primary-green flex justify-center items-center text-[30px] font-bold">
           {number}
@@ -98,19 +98,19 @@ const WorksCard = ({ image, title, text, number, imageAlt }) => {
 
 const MobileWorksCard = ({ image, title, text, number, imageAlt }) => {
   return (
-    <div className="w-full bg-dark-gray rounded-lg flex flex-col overflow-hidden shadow-sm">
-      <div className="flex py-[3rem] px-[1.5rem] gap-[1rem]">
-        <div className="">
-          <div className="w-[50px] aspect-square text-white bg-primary-green flex justify-center items-center text-[30px] font-bold">
-            {number}
-          </div>
+    <div className="w-full bg-dark-gray rounded-lg flex flex-col overflow-hidden shadow-sm gap-[1.5rem]">
+      <div className="flex  px-[1.5rem] mt-[1.5rem]">
+        <div className="w-[50px] aspect-square text-white bg-primary-green flex justify-center items-center text-[30px] font-bold">
+          {number}
         </div>
-        <span className="text-[2rem]  font-bold">{title}</span>
       </div>
-      <div className="w-full pb-[3rem] flex flex-col gap-[2rem] items-center px-[1.5rem]">
-        <span className="text-[1.25rem]  text-center">{text}</span>
+      <span className="text-[2rem] font-bold px-[1.5rem] leading-none">
+        {title}
+      </span>
+      <div className="w-full  flex flex-col gap-[2rem] px-[1.5rem]">
+        <span className="text-[1.25rem]">{text}</span>
       </div>
-      <div className="w-full aspect-video relative">
+      <div className="w-full aspect-[16/10] relative">
         <Image src={image} alt={imageAlt} fill className="object-fill" />
       </div>
     </div>

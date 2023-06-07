@@ -22,6 +22,12 @@ module.exports = {
         "light-gray": "#f4f4f5",
         "primary-black": "#26252b",
       },
+      lineHeight: {
+        35: "35px",
+      },
+      fontFamily: {
+        dino: ["DinoPro", "sans-serif"],
+      },
     },
   },
   plugins: [],

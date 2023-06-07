@@ -44,8 +44,11 @@ const Footer = () => {
   };
 
   return (
-    <div className="w-screen min-h-[300px] flex flex-col items-center p-6  lg:flex-row md:justify-between bg-primary-black md:p-24 text-white overflow-hidden gap-[3rem] shadow-lg">
-      <div className="flex flex-col lg:flex-row gap-[3rem]">
+    <div className="w-screen min-h-[300px] flex flex-col items-center p-[3rem] lg:flex-row md:justify-between bg-primary-black lg:p-24 text-white overflow-hidden gap-[3rem] shadow-lg">
+      <div className="flex flex-col items-center gap-[3rem] lg:hidden">
+        <MobileFooter />
+      </div>
+      <div className="hidden lg:flex flex-col lg:flex-row gap-[3rem]  ">
         <div className="flex flex-col gap-[1rem]">
           <Image
             height={70}
@@ -59,59 +62,55 @@ const Footer = () => {
             &copy; 2023 Dakan. All rights reserved
           </span>
         </div>
-        <div className="flex gap-[1.5rem] items-center">
+        <div className="flex gap-[1.5rem] items-start">
           <LinkList />
         </div>
       </div>
-      <div className="flex flex-col items-center lg:flex-row gap-[.3rem]">
-        <input
-          type="text"
-          className="border-none rounded-full  h-[50px] w-[275px] px-[1rem] text-black"
-          placeholder="Email Address"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <button
-          onClick={emailSubmit}
-          disabled={email === ""}
-          className="bg-primary-green text-black rounded-full h-[50px] px-[2rem] hover:text-primary-gray transition duration-400 cursor-pointer"
+      <div className="hidden items-center lg:flex gap-[.3rem]">
+        <a
+          href="https://form.jotform.com/231286167055154"
+          target="_blank"
+          className="bg-primary-green text-black rounded-full flex justify-center items-center h-[50px] px-[2rem] transition duration-400 drop-shadow-lg"
         >
-          {isLoading ? (
-            <ClipLoader
-              color={"black"}
-              size={16}
-              aria-label="Loading Spinner"
-            />
-          ) : (
-            NOTIFICATION_STATES[subscribeStatus]
-          )}
-        </button>
-        {/* <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--> */}
-        <div
-          style={{ position: "absolute", left: "-5000px" }}
-          aria-hidden="true"
-        >
-          <input
-            type="text"
-            name="b_eb05e4f830c2a04be30171b01_8281a64779"
-            tabIndex="-1"
-            defaultValue=""
-          />
-        </div>
-        <div className="clear">
-          <input
-            type="submit"
-            defaultValue=""
-            name="subscribe"
-            id="mc-embedded-subscribe"
-            className="button"
-            style={{ display: "none" }}
-          />
-        </div>
-        {/* END */}
+          Preregister
+        </a>
       </div>
     </div>
   );
 };
 
 export default Footer;
+
+const MobileFooter = () => {
+  return (
+    <>
+      <div className="flex flex-col items-center gap-[3rem]">
+        <div className="flex flex-col items-center gap-[1rem]">
+          <Image
+            height={70}
+            width={100}
+            priority
+            quality={100}
+            src={"/assets/dakanlogowhite.svg"}
+            alt="Dakan"
+          />
+          <span className="text-[.8rem]">
+            &copy; 2023 Dakan. All rights reserved
+          </span>
+        </div>
+        <div>
+          <a
+            href="https://form.jotform.com/231286167055154"
+            target="_blank"
+            className="bg-primary-green text-black rounded-full flex justify-center items-center h-[50px] px-[2rem] hover:text-primary-green transition duration-400 drop-shadow-lg"
+          >
+            Preregister
+          </a>
+        </div>
+        <div className="flex gap-[1.5rem] items-center">
+          <LinkList />
+        </div>
+      </div>
+    </>
+  );
+};

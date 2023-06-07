@@ -7,6 +7,7 @@ const LinkList = () => {
     <>
       {Object.entries(links).map(([key, value]) => (
         <a
+          key={key}
           href={value.link}
           target="_blank"
           className="text-white hover:text-primary-green transition duration-300"
