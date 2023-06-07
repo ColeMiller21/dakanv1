@@ -36,7 +36,7 @@ const Landing = () => {
           duration: 1,
           delay: 0.2,
         }}
-        className="w-full lg:w-[50%] relative mb-[120px] z-10 aspect-square"
+        className="w-full lg:w-[50%] relative mb-[120px] z-10 aspect-[580/589]"
       >
         <Image
           src={`/assets/header-image.png`}

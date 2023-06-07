@@ -20,7 +20,7 @@ export default async function Image() {
       <div tw="relative flex w-full h-full items-center justify-center">
         <div tw="absolute flex inset-0">
           <img
-            src="/assets/opengraph-image.jpeg"
+            src="../public/assets/opengraph-image.jpeg"
             alt="Phygital"
             tw="flex flex-1"
           />
