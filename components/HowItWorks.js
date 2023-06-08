@@ -12,7 +12,7 @@ const HowItWorks = () => {
           number={1}
           image="/assets/close-up-hands-holding-box.jpeg"
           imageAlt="close-up-hands-holding-box"
-          text="Carefully protect your item(s) and send them to the DAKAN vault"
+          text="Carefully protect your item(s) and send them to the DAKAN vault."
           title="Prepare your assets"
         />
         <WorksCard
@@ -35,7 +35,7 @@ const HowItWorks = () => {
           number={1}
           image="/assets/close-up-hands-holding-box.jpeg"
           imageAlt="alt"
-          text="Carefully protect your item(s) and send them to the DAKAN vault"
+          text="Carefully protect your item(s) and send them to the DAKAN vault."
           title="Prepare your assets"
         />
         <MobileWorksCard

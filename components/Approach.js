@@ -17,7 +17,7 @@ const Approach = () => {
         <p className="w-full lg:w-[90%]">
           At Dakan, we've harnessed the power of NFTs and blockchain to create a
           semi-decentralized marketplace that transcends the limitations of
-          traditional collecting
+          traditional collecting.
         </p>
         <p className="w-full lg:w-[90%]">
           {" "}
