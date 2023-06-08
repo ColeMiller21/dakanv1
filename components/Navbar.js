@@ -46,7 +46,7 @@ const Navbar = () => {
             target="_blank"
             className="bg-primary-black text-white rounded-full flex justify-center items-center h-[50px] px-[2rem] hover:text-primary-green transition duration-400 drop-shadow-lg"
           >
-            Register
+            Preregister
           </a>
         </div>
       </div>
