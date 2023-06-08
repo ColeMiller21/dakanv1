@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { isResSent } from "next/dist/shared/lib/utils";
 
 const Navbar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -10,6 +11,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
+      if (currentScrollPos < 130) return;
       setIsVisible(prevScrollPos > currentScrollPos);
       setPrevScrollPos(currentScrollPos);
     };
@@ -38,7 +40,7 @@ const Navbar = () => {
             alt="Dakan"
           />
         </div>
-        <div className="hidden lg:flex items-center gap-[.3rem]">
+        <div className="flex items-center gap-[.3rem]">
           <a
             href="https://form.jotform.com/231286167055154"
             target="_blank"
