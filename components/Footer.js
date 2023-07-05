@@ -31,9 +31,9 @@ const Footer = () => {
           <a
             href="https://form.jotform.com/231286167055154"
             target="_blank"
-            className="bg-primary-green text-black rounded-full flex justify-center items-center h-[50px] px-[2rem] transition duration-400 drop-shadow-lg"
+            className="bg-primary-green font-bold text-black rounded-full flex justify-center items-center h-[50px] px-[2rem] transition duration-400 drop-shadow-lg"
           >
-            Preregister
+            Pre-Register
           </a>
         </div>
       </div>

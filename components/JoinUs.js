@@ -9,7 +9,14 @@ const JoinUs = () => {
         <div className="w-full md:w-[60%] my-[7rem] ">
           <p className="text-[2rem] md:text-[2.5rem] lg:text-[3rem] text-center font-bold">
             Where physical and digital{" "}
-            <span className="text-primary-green">collect</span> together.
+            <span className="text-primary-green">collect</span> together.{" "}
+            <a
+              href="https://form.jotform.com/231286167055154"
+              target="_blank"
+              className="text-primary-green underline"
+            >
+              Join Us
+            </a>
           </p>
         </div>
         <DotsBanner />
