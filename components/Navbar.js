@@ -42,7 +42,7 @@ const Navbar = () => {
         </div>
         <div className="flex items-center gap-[.3rem]">
           <a
-            href="https://form.jotform.com/231286167055154"
+            href="https://bit.ly/series-1-whitelist"
             target="_blank"
             className="bg-primary-black text-white rounded-full flex justify-center items-center h-[50px] px-[2rem] hover:text-primary-green transition duration-400 drop-shadow-lg"
           >
