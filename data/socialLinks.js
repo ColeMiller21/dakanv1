@@ -3,7 +3,7 @@ import { SiLinktree } from "react-icons/si";
 
 export const links = {
   discord: {
-    link: "https://discord.gg/d2BW8MpS8V",
+    link: "https://discord.gg/dakan",
     icon: <FaDiscord size={30} />,
   },
   twitter: {
